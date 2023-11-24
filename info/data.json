@@ -1,0 +1,53 @@
+{
+	"settings": {
+		"enabled": false, // статус службы вкл/выкл
+		"iface": "", // сетевой интерфейс (доступный интерфейс)
+		"local_address": "", // локальный адрес (адрес интферфейса со статическим ip)
+		"local_port": 0, // порт локального адреса (значение от 1 до 31)
+		"mac_ttl": 300, // время жизни при отсутсвии трафика (значение от 60 до 86400)
+		"unicast": "drop", // обработка unicast - "drop" | "broadcast" | "smart-broadcast"
+		"remote": [] // пример элемента массива - { address: string, port: number, id: number }
+	},
+	"interfaces": [
+		{
+			"id": "eth0",
+			"type": "eth",
+			"address": "192.168.56.100",
+			"mask": "255.255.255.0",
+			"class": "access",
+			"speed": "10000Mb/s",
+			"duplex": "full",
+			"parent_id": ""
+		},
+		{
+			"id": "eth1",
+			"type": "eth",
+			"address": "",
+			"mask": "",
+			"class": "access",
+			"speed": "10000Mb/s",
+			"duplex": "full",
+			"parent_id": ""
+		},
+		{
+			"id": "eth3",
+			"type": "eth",
+			"address": "",
+			"mask": "",
+			"class": "access",
+			"speed": "10000Mb/s",
+			"duplex": "full",
+			"parent_id": ""
+		},
+		{
+			"id": "eth3",
+			"type": "eth",
+			"address": "",
+			"mask": "",
+			"class": "access",
+			"speed": "10000Mb/s",
+			"duplex": "full",
+			"parent_id": ""
+		}
+	]
+}

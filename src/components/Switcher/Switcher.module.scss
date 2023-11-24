@@ -1,0 +1,52 @@
+.Switcher {
+  position: relative;
+  .Switcher__wrapper {
+    .Switcher__row {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      .SwitcherOn {
+        color: #202025;
+      }
+      .SwitcherOff {
+        color: rgba(32, 32, 37, 0.4);
+      }
+    }
+    .Switcher__line {
+      background-color: #cdd3d8;
+      height: 2px;
+      width: 100%;
+      margin-bottom: 14px;
+    }
+    .Switcher__alert {
+      position: absolute;
+      left: 281px;
+      top: 70px;
+      display: flex;
+      align-items: center;
+      width: 342px;
+      justify-content: space-between;
+      padding: 6px 25px;
+      border-radius: 2px;
+      background-color: #1976d2;
+      .Switcher__alertText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 48px;
+        font-weight: 500;
+        color: #fff;
+        font-size: 14px;
+      }
+      .Switcher__alertClose {
+        button {
+          background-color: transparent;
+          cursor: pointer;
+          border: none;
+        }
+      }
+    }
+  }
+}
