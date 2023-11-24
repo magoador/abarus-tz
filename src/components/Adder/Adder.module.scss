@@ -1,0 +1,26 @@
+.Adder {
+  .Adder__wrapper {
+    .Adder__row {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      .Adder__Text {
+        color: #202025;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .Adder__button {
+        margin-bottom: 31px;
+        button {
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          padding-top: 2px;
+          cursor: pointer;
+          background-color: #2196f3;
+          border: none;
+        }
+      }
+    }
+  }
+}
