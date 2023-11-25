@@ -1,0 +1,71 @@
+.Remote {
+  .Remote__wrapper {
+    .remote__bText {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+    .remote__table {
+      max-width: 70%;
+      .remote__rowInfo {
+        display: flex;
+        align-items: center;
+        padding: 30px 15px 30px 30px;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.56);
+        .remote__ipInfo {
+          width: 30%;
+        }
+      }
+      .remote__row {
+        display: flex;
+        align-items: center;
+        padding: 30px 15px 30px 30px;
+        height: 87px;
+        &:hover {
+          .remote__edit {
+            display: block;
+          }
+          .remote__delete {
+            display: block;
+          }
+        }
+        .remote__ip {
+          width: 30%;
+        }
+        .remote__port {
+          flex: 1;
+        }
+        button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+        img {
+          max-height: 23px;
+          max-width: 23px;
+        }
+        .remote__edit {
+          margin-right: 16px;
+          display: none;
+        }
+        .remote__delete {
+          display: none;
+        }
+      }
+      .remote__line {
+        height: 2px;
+        width: 100%;
+        background-color: #e0e0e0;
+      }
+      .remote__empty {
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 18px;
+        text-align: center;
+        margin-top: 31px;
+      }
+    }
+  }
+}
