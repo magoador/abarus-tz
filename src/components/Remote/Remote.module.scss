@@ -7,6 +7,7 @@
     }
     .remote__table {
       max-width: 70%;
+      position: relative;
       .remote__rowInfo {
         display: flex;
         align-items: center;
@@ -65,6 +66,61 @@
         font-size: 18px;
         text-align: center;
         margin-top: 31px;
+      }
+      .remote__deleteModal {
+        width: 360px;
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 180px);
+        padding: 20px;
+        background-color: #f5f5f5;
+        .remote__modalFRow {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          .remote__modalBText {
+            font-weight: 600;
+          }
+          .remote__modalClose {
+            button {
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
+        .remote__modalLine {
+          height: 2px;
+          width: 100%;
+          background-color: rgba(205, 211, 216, 1);
+          margin-bottom: 20px;
+        }
+        .remote__modalText {
+          font-size: 15px;
+          &:nth-child(1) {
+            margin-bottom: 10px;
+          }
+        }
+        .remote__modalSRow {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 8px;
+          margin-top: 20px;
+          .remote__modalButton {
+            button {
+              width: 100px;
+              height: 32px;
+              border-radius: 4px;
+              background-color: #2196f3;
+              border: none;
+              color: #fff;
+              font-size: 15px;
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }

@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Remote.module.scss";
 import remote__edit from "../../assets/img/remote__edit.png";
 import remote__delete from "../../assets/img/remote__delete.png";
+import remote__modalClose from "../../assets/img/remote__modalClose.svg";
 
 const Remote: React.FC = () => {
   return (
@@ -63,6 +64,29 @@ const Remote: React.FC = () => {
           {/* <div className={styles.remote__empty}>
             Удаленные сегменты не заданы
           </div> */}
+          <div className={styles.remote__deleteModal}>
+            <div className={styles.remote__modalFRow}>
+              <div className={styles.remote__modalBText}>Удаление сегмента</div>
+              <div className={styles.remote__modalClose}>
+                <button>
+                  <img src={remote__modalClose} alt="" />
+                </button>
+              </div>
+            </div>
+            <div className={styles.remote__modalLine}></div>
+            <div className={styles.remote__modalText}>
+              Сегмент будет удален.
+            </div>
+            <div className={styles.remote__modalText}>Продолжить?</div>
+            <div className={styles.remote__modalSRow}>
+              <div className={styles.remote__modalButton}>
+                <button>Да</button>
+              </div>
+              <div className={styles.remote__modalButton}>
+                <button>Нет</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
